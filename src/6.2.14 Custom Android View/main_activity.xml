@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context="${packageName}.${activityClass}" >
+
+	<!-- When declared this way, the MainActivity will call "setContentView(R.id.mainactvity)", 
+		which will inflate this view based on (one of) our written constructors.  
+		Instead of having "<TextView>" to indicate a view, 
+		this tells Android where to look for the View we want. -->
+    <edu.virginia.cs2110.scribsDean.ScribbleView
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    />
+    
+</RelativeLayout>
